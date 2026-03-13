@@ -1,9 +1,9 @@
-package Part_I.Ex_20_MultiplicationFormula;
+package Part_I.Ex_23_SimpleCalculator;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class MultiplicationFormula {
+public class SimpleCalculator {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -11,7 +11,13 @@ public class MultiplicationFormula {
         int first = Integer.parseInt(sc.nextLine());
         System.out.println("Give the second number:");
         int second = Integer.parseInt(sc.nextLine());
+        int sum = first + second;
+        int subtraction = first - second;
         int product = first * second;
+        double division = (double) first/second;
+        System.out.println(first + " + " + second + " = " + sum);
+        System.out.println(first + " - " + second + " = " + subtraction);
         System.out.println(first + " * " + second + " = " + product);
+        System.out.println(first + " / " + second + " = " + division);
     }
 }

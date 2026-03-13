@@ -11,7 +11,7 @@ public class AverageOfThreeNumbers {
         int first = Integer.parseInt(sc.nextLine());
         System.out.println("Give the second number:");
         int second = Integer.parseInt(sc.nextLine());
-        System.out.println("Give the second number:");
+        System.out.println("Give the third number:");
         int third = Integer.parseInt(sc.nextLine());
         double average =  (double) (first + second + third) / 3;
         System.out.print("The average is " + average);
