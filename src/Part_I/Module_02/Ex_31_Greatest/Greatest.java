@@ -6,22 +6,13 @@ public class Greatest {
         System.out.println("Greatest: " + answer);
     }
     public static int greatest(int number1, int number2, int number3) {
-        if (number1 > number2 && number1 > number3){
-            return number1;
+        int greatest = number1;
+        if (number2 > greatest){
+            greatest = number2;
         }
-        else if (number2 > number1 && number2 > number3) {
-            return number2;
+        if (number3 > greatest) {
+            greatest = number3;
         }
-        else if (number1 == number2 ) {
-            return number1;
-        }
-        else if (number2 == number3) {
-            return number3;
-        }
-        else if (number1 == number3) {
-            return number3;
-        } else {
-            return number3;
-        }
+        return greatest;
     }
 }
