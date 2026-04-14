@@ -24,6 +24,6 @@ public class PersonalDetails {
         }
         double average = sum/counter;
         System.out.println("Longest name: " + greatestName);
-        System.out.println("Average of birth years: " + average);
+        System.out.println("Average of the birth years: " + average);
     }
 }
