@@ -8,8 +8,8 @@ One of the most complete free Java courses available, used to teach Computer Sci
 
 | Course | Parts | Exercises |
 |---|---|---|
-| Java Programming I | Parts 1–7 | ~50 exercises |
-| Java Programming II | Parts 8–14 | ~56 exercises |
+| Java Programming I | Parts 1–7 | ~133 exercises |
+| Java Programming II | Parts 8–14 | ~125 exercises |
 
 ---
 
