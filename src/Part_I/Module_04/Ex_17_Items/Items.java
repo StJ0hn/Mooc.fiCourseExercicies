@@ -14,7 +14,7 @@ public class Items {
     }
 
     public void list(){
-        for (int i = 0; i < items.size(); i++)
-            System.out.println(items.get(i).toString());
+        for (Item item : items)
+            System.out.println(item);
     }
 }
