@@ -9,7 +9,7 @@ Repositório destinado ao armazenamento das resoluções dos exercícios prátic
 ## Proposta
 O objetivo principal deste repositório é o registro da progressão técnica e a construção de uma base sólida na linguagem Java, consolidando os conceitos teóricos através da resolução exaustiva de problemas algorítmicos.
 
-## 🤖 Automação e CI/CD (AI Code Reviewer)
+## Automação e CI/CD (AI Code Reviewer)
 Para garantir a qualidade do código e a aderência às exigências estritas do sistema de testes do MOOC.fi (TMC), desenvolvi e integrei uma esteira de **Integração Contínua (CI)**. 
 
 O repositório conta com um **bot de code review customizado**, operando da seguinte forma:
