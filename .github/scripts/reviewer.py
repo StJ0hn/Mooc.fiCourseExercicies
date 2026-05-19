@@ -77,7 +77,7 @@ def main():
 
         # Chamada ao modelo Gemini 1.5 Flash
         response = client.models.generate_content(
-            model="gemini-1.5-flash", contents=prompt
+            model="gemini-2.5-flash", contents=prompt
         )
 
         # Envio da resposta para o GitHub
