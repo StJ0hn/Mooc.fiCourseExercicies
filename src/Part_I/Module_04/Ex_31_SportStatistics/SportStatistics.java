@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class SportStatistics {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("File:");
+        System.out.println("File: ");
         String file = sc.nextLine();
         System.out.println("Team:");
         String team = sc.nextLine();
