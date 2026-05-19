@@ -20,10 +20,10 @@ jobs:
       - name: Configurar o Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
       - name: Instalar dependências
-        run: pip install google-generativeai requests
+        run: pip install google-genai requests
 
       - name: Rodar a revisão da IA
         env:

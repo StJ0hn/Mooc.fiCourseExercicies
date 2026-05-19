@@ -1,7 +1,7 @@
 import os
 
-import google.generativeai as genai
 import requests
+from google import genai
 
 # Configurações iniciais pegando as variáveis de ambiente do GitHub Actions
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -10,8 +10,8 @@ REPO = os.environ.get("GITHUB_REPOSITORY")
 PR_NUMBER = os.environ.get("PR_NUMBER")
 
 # Configura a API do Gemini
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+client = genai.Client(api_key=GEMINI_API_KEY)
+model = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
 
 
 def get_pr_diff():
