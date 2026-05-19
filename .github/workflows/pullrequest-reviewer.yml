@@ -31,5 +31,5 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          run: python .github/scripts/reviewer.py
+        run: python .github/scripts/reviewer.py
 
