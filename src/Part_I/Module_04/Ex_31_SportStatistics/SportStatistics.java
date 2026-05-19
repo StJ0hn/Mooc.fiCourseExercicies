@@ -8,7 +8,7 @@ public class SportStatistics {
         Scanner sc = new Scanner(System.in);
         System.out.println("File: ");
         String file = sc.nextLine();
-        System.out.println("Team:");
+        System.out.println("Team: ");
         String team = sc.nextLine();
         int games = 0;
         int wins = 0;
