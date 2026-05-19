@@ -1,7 +1,6 @@
 package Part_I.Module_04.Ex_31_SportStatistics;
 
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SportStatistics {
