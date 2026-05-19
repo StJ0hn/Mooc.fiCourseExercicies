@@ -2,7 +2,7 @@ name: Mooc.fi Gemini Reviewer
 
 on:
   pull_request:
-    types: [ opened, synchronize ]
+    types: [opened, synchronize]
 
 jobs:
   review:
@@ -19,7 +19,7 @@ jobs:
       - name: Configurar o Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
       - name: Instalar dependências
         run: |
@@ -32,5 +32,4 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          run: python .github/scripts/reviewer.py
-        uses:
+        run: python .github/scripts/reviewer.py

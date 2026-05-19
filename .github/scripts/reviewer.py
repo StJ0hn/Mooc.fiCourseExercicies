@@ -44,8 +44,15 @@ def post_comment(review_text):
 
 def main():
     # Validação de segurança inicial
+    # --- INÍCIO DO RAIO-X ---
+    print("=== RAIO-X DAS VARIÁVEIS DE AMBIENTE ===")
+    print(f"GEMINI_API_KEY: {'OK (Recebida)' if GEMINI_API_KEY else 'FALHA (Vazia ou Nula)'}")
+    print(f"GITHUB_TOKEN: {'OK (Recebida)' if GITHUB_TOKEN else 'FALHA (Vazia ou Nula)'}")
+    print(f"PR_NUMBER: {PR_NUMBER if PR_NUMBER else 'FALHA (Vazio)'}")
+    print("========================================")
+
     if not GEMINI_API_KEY or not GITHUB_TOKEN:
-        print("ERRO FATAL: Chaves de API (Gemini ou GitHub) não foram encontradas.")
+        print("ERRO FATAL: Execução abortada por falta de chaves.")
         return
 
     diff = get_pr_diff()
@@ -70,7 +77,7 @@ def main():
 
         # Chamada ao modelo Gemini 1.5 Flash
         response = client.models.generate_content(
-            model="gemini-1.5-flash", contents=prompt
+            model="gemini-2.5-flash", contents=prompt
         )
 
         # Envio da resposta para o GitHub
