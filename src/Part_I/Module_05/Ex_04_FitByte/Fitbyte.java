@@ -12,6 +12,6 @@ public class Fitbyte {
     public double targetHeartRate(double percentageOfMaximum){
         double maximumHeartRate = 206.3 - (0.711 * age);
 
-        return (maximumHeartRate * restHeartRate) + (percentageOfMaximum) + restHeartRate;
+        return (maximumHeartRate - restHeartRate) * (percentageOfMaximum) + restHeartRate;
     }
 }
