@@ -25,6 +25,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return super.toString();
+        return this.name + " (" + this.weight + " kg) at " + this.location;
     }
 }
