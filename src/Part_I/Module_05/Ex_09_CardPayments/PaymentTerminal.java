@@ -48,11 +48,13 @@ public class PaymentTerminal {
     }
 
     public void addMoneyToCard(PaymentCard card, double sum){
-        money += sum;
-        card.addMoney(sum);
+        if (sum > 0){
+            money += sum;
+            card.addMoney(sum);
+        }
     }
 
     public String toString() {
-        return "money: " + money + ", number of sold afforable meals: " + affordableMeals + ", number of sold hearty meals: " + heartyMeals;
+        return "money: " + money + ", number of sold affordable meals: " + affordableMeals + ", number of sold hearty meals: " + heartyMeals;
     }
 }
