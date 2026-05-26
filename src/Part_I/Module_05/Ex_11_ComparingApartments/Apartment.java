@@ -17,4 +17,25 @@ public class Apartment {
         }
         return false;
     }
+
+    public int priceDifference(Apartment compared){
+        int absolutePrice = pricePerSquare * squares;
+        int absolutePriceCompared = compared.pricePerSquare * compared.squares;
+        if (absolutePrice > absolutePriceCompared){
+            return absolutePrice - absolutePriceCompared;
+        } else {
+            return absolutePriceCompared - absolutePrice;
+        }
+    }
+
+    public boolean moreExpensiveThan(Apartment compared){
+        int absolutePrice = pricePerSquare * squares;
+        int absolutePriceCompared = compared.pricePerSquare * compared.squares;
+        if (absolutePrice > absolutePriceCompared){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
