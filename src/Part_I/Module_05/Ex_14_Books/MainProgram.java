@@ -25,7 +25,6 @@ public class MainProgram {
                 books.add(book);
             }
         }
-
         System.out.println("Thank you! Books added: " + books.size());
     }
 }
