@@ -20,7 +20,7 @@ public class Song {
         }
         Song comparedConvert = (Song) compared;
 
-        if (this.name == comparedConvert.name && this.author == comparedConvert.author && this.durationInSeconds == comparedConvert.durationInSeconds){
+        if (this.name.equals(comparedConvert.name) && this.author.equals(comparedConvert.author) && this.durationInSeconds == comparedConvert.durationInSeconds){
             return true;
         }
 
