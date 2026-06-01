@@ -26,7 +26,7 @@ public class Stack {
     }
 
     public String take(){
-        String lastElement = listOfStrings.getLast();
+        String lastElement = listOfStrings.get(listOfStrings.size() - 1);
         listOfStrings.remove(lastElement);
         return lastElement;
     }
