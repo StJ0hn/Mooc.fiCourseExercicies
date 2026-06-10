@@ -47,6 +47,7 @@ public class Room {
                 returnObject = person;
             }
         }
+        persons.remove(returnObject);
         return returnObject;
     }
 }
